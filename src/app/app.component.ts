@@ -7,6 +7,6 @@ import { Router } from "@angular/router";
   styleUrls: ['./app.component.scss']
 })
 
-export class AppComponent implements OnInit {
-  ngOnInit() {
-  }
+export class AppComponent   {
+
+}

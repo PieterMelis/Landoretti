@@ -4,7 +4,7 @@ import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
 import { RouterModule } from '@angular/router';
 import { routing } from './app.routes';
-
+import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
 
 import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
@@ -14,6 +14,7 @@ import { HeaderComponent } from './header/header.component';
 
 
 @NgModule({
+  
   declarations: [
     AppComponent,
     HomeComponent,
