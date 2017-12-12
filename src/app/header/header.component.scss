@@ -4,7 +4,9 @@ $navGray: #eaeaea;
 $noBlack: #4e4e4e;
 
 
-
+.navbar-header{
+	width: 100%;
+}
 .blueLine{
 	background-color: $blueTop;
 	width: 100%;
@@ -14,15 +16,19 @@ $noBlack: #4e4e4e;
 	.row1, .row2{
 		height: 50px;
 	}
-	.row1 a{
-			color: $linkColor;
+	.row1{
+
+			background-color: white;
+			a{
+				color: $linkColor;
+			}
 	}
 	.row2{
 		background-color: $navGray;
 
 		span{
 			padding: 0px 8px;
-			color: $linkColor;	
+			color: $linkColor;
 		}
 		a{
 			font-weight: bold;
@@ -36,6 +42,8 @@ $noBlack: #4e4e4e;
 		position: absolute;
 		top: -4px;
 		left: 0;
+
+		z-index: 10;
 	}
 	.right{
 		position: absolute;
