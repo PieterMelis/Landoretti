@@ -6,6 +6,8 @@ $noBlack: #4e4e4e;
 
 .navbar-header{
 	width: 100%;
+	position: relative;
+	z-index: 10;
 }
 .blueLine{
 	background-color: $blueTop;
@@ -14,13 +16,17 @@ $noBlack: #4e4e4e;
 }
 .navigation{
 	.row1, .row2{
-		height: 50px;
+		height: 45px;
 	}
 	.row1{
 
 			background-color: white;
 			a{
 				color: $linkColor;
+
+			}
+			.nav-item a:hover{
+				background-color:  white;
 			}
 	}
 	.row2{
@@ -34,6 +40,9 @@ $noBlack: #4e4e4e;
 			font-weight: bold;
 			color: $noBlack;
 			font-size: 15px;
+		}
+		.nav-item a:hover{
+			background-color:  $navGray;
 		}
 
 	}
@@ -68,4 +77,22 @@ $noBlack: #4e4e4e;
 			padding: 0 16px;
 		}
 	}
+}
+.state1{
+	display: none;
+}
+@keyframes buttonClickAnimation {
+  0% {transform: scale(0.8);}
+  100% {transform: scale(0);}
+}
+ .animated-button {
+  display: block;
+	li, a{
+		display: inline;
+	}
+}
+.login{
+	display: none ;
+	margin-left: 120px;
+
 }

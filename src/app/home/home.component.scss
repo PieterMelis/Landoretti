@@ -1,7 +1,7 @@
 $textColor: rgba(1,32,166,0.65);
 $blueTop: #01a6a0;
 $linkColor: #0a1e75;
-
+$navGray: #eaeaea;
 
 
   .text{
@@ -25,7 +25,7 @@ $linkColor: #0a1e75;
   }
 .carousel-indicators {
   position: absolute;
-    bottom: 10px;
+    bottom: 0px;
     left: 50%;
     z-index: 15;
     width: 60%;
@@ -74,14 +74,17 @@ $linkColor: #0a1e75;
   right: 0;
 }
 
+h1{
+  color: $linkColor;
+  font-family: Helvetica;
+  text-align: center;
+  padding: 50px;
+  font-size: 20pt;
+}
 
 .works{
-  h1{
-    color: $linkColor;
-    font-family: Helvetica;
-    text-align: center;
-    padding: 50px;
-  }
+  margin-bottom: 50px;
+
   img{
     display: block;
     margin: 0 auto;
@@ -95,4 +98,23 @@ $linkColor: #0a1e75;
     text-align: center;
     margin: 0 auto;
   }
+}
+.popular{
+  background-color: $navGray;
+  padding-bottom: 50px;
+  span img{
+    transform: rotate(-90deg) scale(0.8);
+  }
+
+  .sideimg{
+    width: 300px;
+    margin: 0 10px 10px 0;
+  }
+  .big{
+    width: 675px;
+  }
+  .photo{
+  float: left;
+  }
+
 }

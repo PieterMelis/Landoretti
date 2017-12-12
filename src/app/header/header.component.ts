@@ -7,9 +7,13 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HeaderComponent implements OnInit {
 
-  constructor() { }
+  animated: boolean = false;
 
-  ngOnInit() {
-  }
+     clickMe() {
 
+       this.animated = !this.animated;
+
+
+
+     }
 }

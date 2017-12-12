@@ -6,19 +6,30 @@
       </div>
       <div class="row1">
         <div class="container">
-          <ul class="nav">
+          <ul class="nav state1" [ngClass]="{'animated-button': animated}">
             <li class="nav-item">
-              <a class="nav-link active" href="#"><span> <img src="./assets/img/menu.png" alt="menu"> </span> Watchlist</a>
+              <a  href="#"><span> <img src="./assets/img/menu.png" alt="menu"> </span> Watchlist</a>
             </li>
             <li>|</li>
             <li class="nav-item">
-              <a class="nav-link" href="#"><span><img src="./assets/img/user.png" alt="menu"></span> Profile</a>
+              <a href="#"><span  ><img src="./assets/img/user.png" alt="menu" ></span> Profile</a>
             </li>
             <li>|</li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Logout</a>
+              <a  href="#" class="logout" (click)="clickMe()"  > Logout</a>
             </li>
-          <li class="right"><input type="text"  placeholder="Search"><span><img src="./assets/img/Searchicon.png" alt="menu"></span> </li>
+          <li class="right" ><input type="text"  placeholder="Search"><span><img src="./assets/img/Searchicon.png" alt="menu"></span> </li>
+          </ul>
+
+          <ul class="nav " [ngClass]="{'login': animated}">
+            <li class="nav-item">
+              <a  href="#">Register</a>
+            </li>
+            <li>|</li>
+            <li class="nav-item">
+              <a href="#" (click)="clickMe()">Login</a>
+            </li>
+          <li class="right" ><input type="text"  placeholder="Search"><span><img src="./assets/img/Searchicon.png" alt="menu"></span> </li>
           </ul>
         </div>
 
@@ -40,7 +51,6 @@
           </ul>
 
         </div>
-
 
       </div>
     </div>
