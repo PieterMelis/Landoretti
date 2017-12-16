@@ -15,7 +15,7 @@
 </div>
 <div class="collapse navbar-collapse navbar-ex1-collapse">
     <ul class="nav navbar-nav text-center">
-        <li class="active "><a href="#">Home</a></li>
+        <li class="nav-item "><a href="#">Home</a></li>
         <li class="nav-item"><a class="nav-link" href="#">art</a></li>
         <li class="nav-item"><a class="nav-link" href="#">isearch</a></li>
         <li class="nav-item"><a class="nav-link" href="#">myauctions</a></li>
@@ -59,7 +59,7 @@
 
           <ul class="nav " [ngClass]="{'login': animated}">
             <li class="nav-item">
-              <a  href="#">Register</a>
+              <a  routerLink="/register">Register</a>
             </li>
             <li>|</li>
             <li class="nav-item">
@@ -73,10 +73,10 @@
       <div class="row2">
         <div class="container">
           <ul class="nav">
-            <li class="nav-item"><a class="nav-link" href="#">home</a></li>
-            <li class="nav-item"><a class="nav-link" href="#">art</a></li>
-            <li class="nav-item"><a class="nav-link" href="#">isearch</a></li>
-            <li class="nav-item"><a class="nav-link" href="#">myauctions</a></li>
+            <li class="nav-item"><a class="nav-link" routerLink="/">home</a></li>
+            <li class="nav-item"><a class="nav-link" routerLink="/art">art</a></li>
+            <li class="nav-item"><a class="nav-link" routerLink="/isearch">isearch</a></li>
+            <li class="nav-item"><a class="nav-link" routerLink="/auctions">myauctions</a></li>
             <li class="nav-item"><a class="nav-link" href="#">mybids</a></li>
             <li class="nav-item"><a class="nav-link" href="#">contact</a></li>
             <li class="right">

@@ -8,7 +8,6 @@ import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
 
 import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
-import { OverzichtComponent } from './overzicht/overzicht.component';
 import { FooterComponent } from './footer/footer.component';
 import { HeaderComponent } from './header/header.component';
 import { OverviewComponent } from './overview/overview.component';
@@ -22,11 +21,10 @@ import { RegisterComponent } from './register/register.component';
 
 
 @NgModule({
-  
+
   declarations: [
     AppComponent,
     HomeComponent,
-    OverzichtComponent,
     FooterComponent,
     HeaderComponent,
     OverviewComponent,
