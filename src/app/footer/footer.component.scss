@@ -112,3 +112,18 @@ $google: #dd4b39;
   font-size: 15px;
   margin-top: .8em;
 }
+
+@media (max-width: 997px) {
+
+  .bigNav .contact {
+    width: 70%;
+    margin-left: 0;
+}
+  .contact{
+    margin-left: 0 !important;
+    padding-bottom: 50px;
+  }
+  .navbar-footer{
+    display: none;
+  }
+ }

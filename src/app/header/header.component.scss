@@ -4,6 +4,8 @@ $navGray: #eaeaea;
 $noBlack: #4e4e4e;
 
 
+
+
 .navbar-header{
 	width: 100%;
 	position: relative;
@@ -15,9 +17,6 @@ $noBlack: #4e4e4e;
 	height: 4px;
 }
 .navigation{
-	.row1, .row2{
-		height: 45px;
-	}
 	.row1{
 
 			background-color: white;
@@ -39,6 +38,7 @@ $noBlack: #4e4e4e;
 		a{
 			font-weight: bold;
 			color: $noBlack;
+			padding: 10px;
 			font-size: 15px;
 		}
 		.nav-item a:hover{
@@ -69,30 +69,51 @@ $noBlack: #4e4e4e;
 	}
 	.nav{
 		margin-left: 120px;
-
 		font-size: 12px;
 		text-transform: uppercase;
-		padding-top: 1.2em;
+		padding: 17px 0;;
 		a{
 			padding: 0 16px;
 		}
 	}
 }
-.state1{
+.mobile{
 	display: none;
-}
-@keyframes buttonClickAnimation {
-  0% {transform: scale(0.8);}
-  100% {transform: scale(0);}
-}
- .animated-button {
-  display: block;
-	li, a{
-		display: inline;
+	margin: 0;
+
+	text-transform: uppercase;
+	.logo{
+		height: 50px;
 	}
+	button{
+		border: transparent;
+	}
+	.navbar-default .navbar-toggle:focus, .navbar-default .navbar-toggle:hover {
+    background-color: transparent ;
 }
-.login{
-	display: none ;
-	margin-left: 120px;
 
 }
+.navigation{
+	display: block;
+}
+
+
+@media (max-width: 767px) {
+	.mobile{
+		display: block;
+	}
+	.navigation{
+		display: none;
+	}
+}
+
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) and (max-width: 991px) {
+
+}
+
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) and (max-width: 1199px) {  }
+
+// Extra large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) {  }

@@ -1,12 +1,48 @@
+
+
+
 <div class="blueLine"></div>
+
+<div class="navbar navbar-inverse navbar-fixed-top mobile" role="navigation">
+<div class="navbar-header">
+<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+    <span class="sr-only">Toggle navigation</span>
+    <span class="icon-bar"></span>
+    <span class="icon-bar"></span>
+    <span class="icon-bar"></span>
+</button>
+<a  href="#"> <img src="../assets/img/Logo.png" alt="logo" class="logo">  </a>
+</div>
+<div class="collapse navbar-collapse navbar-ex1-collapse">
+    <ul class="nav navbar-nav text-center">
+        <li class="active "><a href="#">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="#">art</a></li>
+        <li class="nav-item"><a class="nav-link" href="#">isearch</a></li>
+        <li class="nav-item"><a class="nav-link" href="#">myauctions</a></li>
+        <li class="nav-item"><a class="nav-link" href="#">mybids</a></li>
+        <li class="nav-item"><a class="nav-link" href="#">contact</a></li>
+        <li><a href="#">Register</a></li>
+        <li><a href="#">Login</a></li>
+
+    </ul>
+</div>
+</div>
+
+
+
+
+
+
 <div class="navigation">
+
     <div class="navbar-header">
       <div class="container">
         <a  href="#"> <img src="../assets/img/Logo.png" alt="logo" class="logo">  </a>
       </div>
+
       <div class="row1">
         <div class="container">
-          <ul class="nav state1" [ngClass]="{'animated-button': animated}">
+          <!--<ul class="nav state1" [ngClass]="{'animated-button': animated}">
             <li class="nav-item">
               <a  href="#"><span> <img src="./assets/img/menu.png" alt="menu"> </span> Watchlist</a>
             </li>
@@ -19,7 +55,7 @@
               <a  href="#" class="logout" (click)="clickMe()"  > Logout</a>
             </li>
           <li class="right" ><input type="text"  placeholder="Search"><span><img src="./assets/img/Searchicon.png" alt="menu"></span> </li>
-          </ul>
+        </ul> -->
 
           <ul class="nav " [ngClass]="{'login': animated}">
             <li class="nav-item">
@@ -54,6 +90,4 @@
 
       </div>
     </div>
-
-
 </div>

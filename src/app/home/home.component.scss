@@ -2,6 +2,7 @@ $textColor: rgba(1,32,166,0.65);
 $blueTop: #01a6a0;
 $linkColor: #0a1e75;
 $navGray: #eaeaea;
+$lightgray: #f3f3f3;
 
 
   .text{
@@ -22,6 +23,11 @@ $navGray: #eaeaea;
       border: 4px solid white;
       background-color: $blueTop;
     }
+  }
+  .carouselPhoto{
+    max-width: 1500px;
+    margin: 0 auto;
+    background-color: black;
   }
 .carousel-indicators {
   position: absolute;
@@ -100,7 +106,7 @@ h1{
   }
 }
 .popular{
-  background-color: $navGray;
+  background-color: $lightgray;
   padding-bottom: 50px;
   span img{
     transform: rotate(-90deg) scale(0.8);
