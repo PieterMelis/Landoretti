@@ -1,8 +1,11 @@
 $textColor: rgba(1,32,166,0.65);
+$textColorfull: rgba(1,32,166,1);
 $blueTop: #01a6a0;
 $linkColor: #0a1e75;
 $navGray: #eaeaea;
 $lightgray: #f3f3f3;
+$grayTitle: #545353;
+
 
 .head {
   margin-top: 88px;
@@ -60,12 +63,36 @@ $lightgray: #f3f3f3;
     color: $blueTop;
   }
 }
+.main{
+  .breadcrumbs{
+    margin-top: 20px;
+    color: $blueTop;
+    a{
+      color: $blueTop;
+    }
+  }
 
+  h1{
+    font-size: 25pt;
+    padding: 20px 0;
+  }
+  h2{
+    color: $grayTitle;
+  }
+  label{
+  color: $textColor;
+  font-size: 10pt;
+  margin-top: 10px;
+  }
+}
 
 
 
 @media (max-width: 767px) {
   .head {
     margin-top: 0;
+  }
+  .container{
+    width: 100%;
   }
 }

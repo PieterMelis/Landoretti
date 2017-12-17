@@ -6,3 +6,9 @@ body{
   width: 1024px;
   font-family: arial;
 }
+@media (max-width: 767px) {
+
+  .container{
+    width: 100%;
+  }
+}
