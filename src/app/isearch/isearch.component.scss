@@ -1,7 +1,71 @@
+$textColor: rgba(1,32,166,0.65);
+$blueTop: #01a6a0;
+$linkColor: #0a1e75;
+$navGray: #eaeaea;
+$lightgray: #f3f3f3;
+
 .head {
-  background-image: asset-url("assets/img/mockup2.png");
-  height: 500px;
+  margin-top: 88px;
+  background-image: url("../../assets/img/mockup2.png");
+  height: 432px;
   width: 100%;
-  position: absolute;
-  z-index: 11;
+  background-position: center;
+  background-size: cover;
+  transform: scaleX(-1);
+}
+
+.text {
+  position: relative;
+  top: 50px;
+  height: 252px;
+  width: 312px;
+  color: white;
+  font-size: 9pt;
+  transform: scaleX(-1);
+  background-color: $textColor;
+  h1{
+    border-bottom: 1px solid $lightgray;
+    padding: 30px 0 10px 30px;
+  }
+  p{
+    padding: 30px;
+  }
+  h5{
+    padding-left: 30px;
+  }
+  .ball {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    top: -10px;
+    left: -10px;
+    border-radius: 50%;
+    border: 4px solid white;
+    background-color: $blueTop;
+  }
+}
+.visit{
+  transform: scaleX(-1);
+  width: 312px;
+  margin-top: 50px;
+  background-color: white;
+
+  h1{
+    padding: 30px;
+  }
+  span{
+    font-size: 16px;
+  }
+  a{
+    color: $blueTop;
+  }
+}
+
+
+
+
+@media (max-width: 767px) {
+  .head {
+    margin-top: 0;
+  }
 }
