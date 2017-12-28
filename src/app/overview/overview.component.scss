@@ -135,7 +135,29 @@ $white: white;
   position: absolute;
   right: 15px;
 }
-
+.main{
+  margin-top: 50px;
+  .art1{
+    background-image: url("../../assets/img/uno.png");
+    height: 800px;
+    background-size: cover;
+    background-position: 25% 50%;
+  }
+  @mixin art($img){
+    height: 250px;
+    background-image: url($img) ;
+    background-size: cover;
+    background-position: center;
+  }
+  .art2{ @include art("../../assets/img/pro2.png");}
+  .art3{ @include art("../../assets/img/pro3.png");}
+  .art4{ @include art("../../assets/img/pro4.png");}
+  .art5{ @include art("../../assets/img/pro5.png");}
+  .info{
+    height: 100px;
+    margin-bottom: 50px;
+  }
+}
 
 
 
