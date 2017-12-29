@@ -144,6 +144,17 @@ $graylast: #e5e5e5;
     height: 800px;
     background-size: cover;
     background-position: 25% 50%;
+
+    .lorem{
+      margin: 50px;
+      h1{
+        font-size: 30px;
+        margin-bottom: 20px;
+      }
+      p{
+        font-size: 12px;
+      }
+    }
   }
   .vis{
     background-color: $lighterdarkgray;
@@ -163,7 +174,13 @@ $graylast: #e5e5e5;
     background-image: url($img) ;
     background-size: cover;
     background-position: center;
-
+    transition: filter .25s ease-in-out;
+    &:hover{
+      background-image:  url("../../assets/img/search.png"),url($img);
+      background-size: 25%,cover;
+      background-repeat: no-repeat;
+      filter: opacity(50%);
+    }
   }
   .art2{ @include art("../../assets/img/pro2.png");}
   .art3{ @include art("../../assets/img/pro3.png");}
