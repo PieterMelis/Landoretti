@@ -112,7 +112,7 @@ $white: white;
   }
 }
 .breadcrumbs {
-  margin-top: 20px;
+  margin-top: 5px;
   color: $blueTop;
 
   a {
@@ -131,12 +131,13 @@ $white: white;
   border: 1px solid transparent;
 }
 .pull-right{
-  top: 20px;
+  top: 5px;
   position: absolute;
   right: 15px;
 }
 .main{
   margin-top: 50px;
+
   .art1{
     background-image: url("../../assets/img/uno.png");
     height: 800px;
