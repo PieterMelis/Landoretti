@@ -38,24 +38,33 @@
     <form [formGroup]="form.getForm()" (ngSubmit)="save()">
       <div class="row">
         <div class="form-group col-lg-6">
-          <label>Name</label>
-          <input type="text" class="form-control" formControlName="name"  >
+          <label>Company or name</label>
+          <input type="text" class="form-control" formControlName="name"   >
         </div>
 
         <div class="form-group col-lg-6">
           <label>Email</label>
-          <input type="text" class="form-control" formControlName="email">
+          <input type="text" class="form-control" formControlName="email"   >
         </div>
 
         <div class="form-group col-lg-6">
           <label>Password</label>
-          <input type="password" class="form-control" formControlName="password">
+          <input type="password" class="form-control" formControlName="password"  >
         </div>
 
         <div class="form-group col-lg-6">
-          <label>RE-Password</label>
-          <input type="repassword" class="form-control" formControlName="repassword">
+          <label>Password confirmation</label>
+          <input type="password" class="form-control" formControlName="repassword"   >
+        </div>
 
+        <div class="form-group col-lg-6">
+          <label for="sel1">Select list:</label>
+          <select class="form-control" id="sel1">
+            <option>Belgium</option>
+            <option>2</option>
+            <option>3</option>
+            <option>4</option>
+          </select>
         </div>
 
 

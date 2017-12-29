@@ -13,13 +13,16 @@ export class RegisterComponent implements OnInit {
  ngOnInit() {
 
    this.form = new ValidationManager({
-     'name'        : 'required|minLength:4|maxLength:12|alphaSpace',
+     'name'        : 'required|minLength:4|maxLength:12',
      'email'       : 'required|email',
      'password'    : 'required|rangeLength:8,50',
      'repassword'  : 'required|equalTo:password'
    });
 
-   this.form.setValue('name', 'Default');
+   this.form.setValue('name', 'Studio 6');   
+   this.form.setValue('email', 'name@provider.com');
+   this.form.setValue('password', 'Samsamsam');
+   this.form.setValue('repassword', 'Samsamsam');
  }
 
  save(){

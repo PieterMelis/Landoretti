@@ -93,7 +93,10 @@ label {
   border: 1px solid #ced4da;
   border-radius: 0;
 }
-
+select.form-control:not([size]):not([multiple]),
+option.form-control:not([size]):not([multiple]){
+    height: calc(2.25rem + 10px);
+}
 .error {
     margin-top: 30px;
   .alert {
