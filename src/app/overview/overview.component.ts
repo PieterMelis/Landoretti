@@ -7,9 +7,12 @@ import { Component, OnInit } from '@angular/core';
 })
 export class OverviewComponent implements OnInit {
 
-  constructor() { }
+  animated: boolean = false;
 
-  ngOnInit() {
-  }
+     clickMe() {
+       this.animated = !this.animated;
+     }
+     ngOnInit(){
 
+     }
 }

@@ -88,28 +88,50 @@ $graylast: #e5e5e5;
       position: absolute;
       right: 15px;
       top: 30px;
-      color: $linkColor;
+      color: $textColorfull;
       font-size: 15px;
-      span{
-        background-color: gray;
+
+      &:hover{cursor: pointer; }
+      li{
+        background-color: $graylast;
         color: $white;
         padding: 5px;
         font-size: 10px;
         border-radius: 50%;
+        transition: all 0.5s ease;
       }
     }
   }
   .row{
-
+    display: none;
     p{
         cursor: pointer;
         margin: 0;
         margin-left: 10px;
+        &:hover{
+          color: $textColorfull;
+        }
     }
     b{
       padding-top: 10px;
       display: block;
     }
+  }
+
+}
+.animated-button{
+  .row{
+    display: block;
+  }
+  li{
+
+transition: all 1s ease;
+    transition: rotate(90deg);
+    -webkit-transform:rotate(90deg);
+   -moz-transform:rotate(90deg);
+    -ms-transform:rotate(90deg);
+     -o-transform:rotate(90deg);
+        transform:rotate(90deg);
   }
 }
 .breadcrumbs {
