@@ -106,21 +106,62 @@ h1{
   }
 }
 .popular{
+  transition: all 1s ease;
   background-color: $lightgray;
-  padding-bottom: 50px;
+  padding-bottom: 100px;
   span img{
-    transform: rotate(-90deg) scale(0.8);
+    transition: all 1s ease;
+    transform: rotate(0deg) scale(0.8);
+  }
+  .row img{
+    transition: all 1s ease;
+    width: 100%;
   }
 
-  .sideimg{
-    width: 300px;
-    margin: 0 10px 10px 0;
-  }
-  .big{
-    width: 675px;
-  }
-  .photo{
-  float: left;
-  }
 
+}
+.animated-button{
+h1{
+  color: white;
+}
+  transition: all 1s ease;
+  background-color: $blueTop;
+  color: white;
+    span img{
+      transition: all 1s ease;
+          transition: rotate(-90deg)scale(0.8);
+          -webkit-transform:rotate(-90deg)scale(0.8);
+         -moz-transform:rotate(-90deg)scale(0.8);
+          -ms-transform:rotate(-90deg)scale(0.8);
+           -o-transform:rotate(-90deg)scale(0.8);
+              transform:rotate(-90deg)scale(0.8);
+
+    }
+    .row{
+
+      img{
+        transition: all 1s ease;
+        filter: grayscale(100%);
+      }
+    }
+  .time{
+    transition: all 1s ease;
+    transform:scaleX(0.6) scaleY(0.7) translateX(-50%);
+    border: 12px solid white;
+    box-shadow: 1px 5px 50px black;
+  }
+  .woman{
+
+    transition: all 1s ease;
+    transform:scaleX(0.8) translateX(220%) translateY(50%);
+    border: 8px solid white;
+    padding:0 !important;
+
+  }
+  .stapms{
+    transition:  1s ease;
+    transform:scaleX(0.8) translateX(0%) translateY(-50%);
+    border: 8px solid white;
+    padding:0 !important;
+  }
 }

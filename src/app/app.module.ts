@@ -19,6 +19,7 @@ import { WatchlistComponent } from './watchlist/watchlist.component';
 import { NewauctionComponent } from './newauction/newauction.component';
 import { ProfileComponent } from './profile/profile.component';
 import { RegisterComponent } from './register/register.component';
+import { FaqComponent } from './faq/faq.component';
 
 
 @NgModule({
@@ -35,7 +36,8 @@ import { RegisterComponent } from './register/register.component';
     WatchlistComponent,
     NewauctionComponent,
     ProfileComponent,
-    RegisterComponent
+    RegisterComponent,
+    FaqComponent
   ],
   imports: [
     BrowserModule,
