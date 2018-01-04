@@ -3,7 +3,7 @@ $blueTop: #01a6a0;
 $linkColor: #0a1e75;
 $navGray: #eaeaea;
 $lightgray: #f3f3f3;
-
+$babyblue: #51bed1;
 
   .text{
     position: absolute;
@@ -25,9 +25,27 @@ $lightgray: #f3f3f3;
     }
   }
   .carouselPhoto{
-    max-width: 1500px;
-    margin: 0 auto;
     background-color: black;
+    .carousel{
+        max-width: 1500px;
+        margin: 0 auto;
+        /* Small Devices, Tablets */
+        @media only screen and (max-width : 768px) {
+          height: 100vh;
+          img{
+            display: block;
+            width: 100vw;
+            height: 100vh;
+            object-fit: cover;
+          }
+          .text{
+            width: 90;
+          }
+        }
+
+
+
+    }
   }
 .carousel-indicators {
   position: absolute;
@@ -108,6 +126,7 @@ h1{
 .popular{
   transition: all 1s ease;
   background-color: $lightgray;
+  height: 640px;
   padding-bottom: 100px;
   span img{
     transition: all 1s ease;
@@ -117,15 +136,18 @@ h1{
     transition: all 1s ease;
     width: 100%;
   }
-
+  .lorem{display: none;}
 
 }
 .animated-button{
-h1{
-  color: white;
-}
+  position: relative;
+  z-index: 10;
+  h1{
+    color: white;
+  }
   transition: all 1s ease;
-  background-color: $blueTop;
+
+  background: radial-gradient(200px at center, white, $babyblue);
   color: white;
     span img{
       transition: all 1s ease;
@@ -138,7 +160,8 @@ h1{
 
     }
     .row{
-
+        position: absolute;
+        z-index: 10;
       img{
         transition: all 1s ease;
         filter: grayscale(100%);
@@ -163,5 +186,19 @@ h1{
     transform:scaleX(0.8) translateX(0%) translateY(-50%);
     border: 8px solid white;
     padding:0 !important;
+  }
+  .lorem{
+    background: linear-gradient(to right,  $babyblue, #4ed1e8 ,  $babyblue);
+    position: absolute;
+    width: 100%;
+    display: block;
+    text-align: center;
+    height: 1px;
+    height: 240px;
+
+    bottom: 0;
+    p{
+      margin-top: 100px;
+    }
   }
 }

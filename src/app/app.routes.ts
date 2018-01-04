@@ -12,7 +12,7 @@ import { NewauctionComponent } from './newauction/newauction.component';
 import { OverviewComponent } from './overview/overview.component';
 import { ProfileComponent } from './profile/profile.component';
 import { WatchlistComponent } from './watchlist/watchlist.component';
-
+import { FaqComponent } from './faq/faq.component';
 
 
 const routes: Routes = [
@@ -25,6 +25,7 @@ const routes: Routes = [
   {path: 'overview', component: OverviewComponent},
   {path: 'profile', component: ProfileComponent},
   {path: 'watchlist', component: WatchlistComponent},
+  {path: 'faq', component: FaqComponent},
   {path: 'register', component: RegisterComponent}
 ];
 

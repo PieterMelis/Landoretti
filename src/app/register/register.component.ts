@@ -16,7 +16,7 @@ export class RegisterComponent implements OnInit {
      'name'        : 'required|minLength:4|maxLength:12',
      'email'       : 'required|email',
      'password'    : 'required|rangeLength:8,50',
-     'repassword'  : 'required|equalTo:password'
+     'repassword'  : 'required|equalTo:password',
      'adress'      : 'required|maxLength:50',
      'phone'       : 'required|maxLength:50|number',
      'zip'         : 'required|minLength:4|maxLength:12|number',
