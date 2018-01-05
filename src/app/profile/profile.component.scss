@@ -1,0 +1,261 @@
+$textColor: rgba(1,32,166,0.65);
+$textColorfull: rgba(1,32,166,1);
+$blueTop: #01a6a0;
+$linkColor: #0a1e75;
+$navGray: #eaeaea;
+$lightgray: #f3f3f3;
+$lighterdarkgray: #f5f5f5;
+$grayTitle: #545353;
+$darkgray: #757575;
+$white: white;
+$black: black;
+$graylast: #e5e5e5;
+
+
+.head {
+  margin-top: 88px;
+  background-image: url("../../assets/img/mockup2.png");
+  height: 432px;
+  width: 100%;
+  background-position: center;
+  background-size: cover;
+  transform: scaleX(-1);
+}
+
+.text {
+  position: relative;
+  top: 50px;
+  height: 252px;
+  width: 312px;
+  color: white;
+  font-size: 9pt;
+  transform: scaleX(-1);
+  background-color: $textColor;
+
+  h1 {
+    border-bottom: 1px solid $lightgray;
+    padding: 30px 0 10px 30px;
+  }
+
+  p {
+    padding: 30px;
+  }
+
+  h5 {
+    padding-left: 30px;
+  }
+
+  .ball {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    top: -10px;
+    left: -10px;
+    border-radius: 50%;
+    border: 4px solid white;
+    background-color: $blueTop;
+  }
+}
+
+.visit {
+  transform: scaleX(-1);
+  width: 312px;
+  margin-top: 50px;
+  background-color: white;
+
+  h1 {
+    padding: 30px;
+    text-transform: uppercase;
+
+      font-size: 16px;
+  }
+
+  span {
+  }
+
+  a {
+    color: $blueTop;
+  }
+}
+
+.main {
+  .breadcrumbs {
+    margin-top: 20px;
+    color: $blueTop;
+
+    a {
+      color: $blueTop;
+    }
+  }
+  h1 {
+    font-size: 25pt;
+    padding: 20px 0;
+  }
+
+  h2 {
+    margin-top: 50px;
+    color: $grayTitle;
+  }
+
+  label {
+    color: $textColor;
+    font-size: 10pt;
+    margin-top: 10px;
+  }
+  .contact{
+    border: 1px solid $lighterdarkgray;
+    padding: 10px 25px;
+    .row{
+      margin-top: 20px;
+      .ad{
+        border-right: 1px solid $lighterdarkgray;
+      }
+      a{
+        color: $blueTop;
+        text-decoration: underline;
+      }
+      img{
+        transform: scale(0.8);
+      }
+      h5{
+        color:  $textColor;
+        font-weight: bold;
+      }
+    }
+  }
+
+    .carouselPhoto{
+      margin-top: 20px;
+      .carousel{
+
+
+
+
+      }
+    .carousel-indicators {
+      position: absolute;
+        bottom: 0px;
+        left: 50%;
+        z-index: 15;
+        width: 60%;
+        padding-left: 0;
+        margin-left: -30%;
+        text-align: center;
+        list-style: none;
+    .carousel-inner{
+      height: 850px;
+      background-size: cover;
+    }
+      li {
+        display: inline-block;
+        width: 10px;
+        height: 10px;
+        margin: 8px;
+        text-indent: -999px;
+        cursor: pointer;
+        background-color: #000\9;
+        background-color: rgba(0,0,0,0);
+        border: 0.4px solid #fff;
+        border-radius: 10px;
+        background-color: rgba(255,255,255,0.3);
+      }
+      .active {
+        background-color: #fff;
+      }
+
+    }
+    .glyphicon-menu-left, .glyphicon-menu-right{
+        position: absolute;
+        top: 0;
+        z-index: 5;
+        display: inline-block;
+        background-color: rgba(0,0,0,0.5);
+        width: 30px;
+        height: 250px;
+        font-size: 20px;
+        text-align: center;
+        color: white;
+        padding-top: 110px;
+        font-weight: lighter;
+
+    }
+    .glyphicon-menu-left{
+      left: 0;
+    }
+    .glyphicon-menu-right{
+      right: 0;
+    }
+  }
+}
+
+
+.main{
+  margin-top: 50px;
+
+  .art1{
+    background-image: url("../../assets/img/uno.png");
+    height: 800px;
+    background-size: cover;
+    background-position: 25% 50%;
+
+    .lorem{
+      margin: 50px;
+      h1{
+        font-size: 30px;
+        margin-bottom: 20px;
+      }
+      p{
+        font-size: 12px;
+      }
+    }
+  }
+  .vis{
+    background-color: $lighterdarkgray;
+    border: 1px solid $graylast;
+    padding: 12px;
+    font-size: 8px;
+    text-align: center;
+    font-weight: bold;
+    a{
+      color: $textColorfull;
+      text-decoration: none;
+    }
+
+  }
+  @mixin art($img){
+    height: 250px;
+    background-image: url($img) ;
+    background-size: cover;
+    background-position: center;
+    transition: filter .25s ease-in-out;
+    &:hover{
+      background-image:  url("../../assets/img/search.png"),url($img);
+      background-size: 25%,cover;
+      background-repeat: no-repeat;
+      filter: opacity(50%);
+    }
+  }
+  .art2{ @include art("../../assets/img/pro2.png");}
+  .art3{ @include art("../../assets/img/pro3.png");}
+  .art4{ @include art("../../assets/img/pro4.png");}
+  .art5{ @include art("../../assets/img/pro5.png");}
+  .art6{ @include art("../../assets/img/pro5.png");}
+  .art7{ @include art("../../assets/img/pro5.png");}
+  .art8{ @include art("../../assets/img/pro5.png");}
+  .art9{ @include art("../../assets/img/pro5.png");}
+  .info{
+    height: 115px;
+    width: 90%;
+    margin: 20px auto;
+    margin-bottom: 40px;
+    p{margin: 0; color: $textColorfull;}
+    .artfooter{
+      border-bottom: 1px solid $graylast;
+      p{
+        padding-top: 11px;
+        color: $black;
+      }
+    }
+  }
+
+}

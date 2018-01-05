@@ -113,3 +113,101 @@ select.form-control:not([size]):not([multiple]) *{
     border-color: transparent;
   }
 }
+.control {
+  display: block;
+  position: relative;
+  padding-left: 30px;
+  margin-bottom: 5px;
+  padding-top: 30px;
+  cursor: pointer;
+  input {
+    position: absolute;
+    z-index: -1;
+    opacity: 0;
+  }
+  p{
+    color: black;
+    font-size: 10px;
+    font-weight: normal;
+  }
+  span{
+    color: $blueTop;
+    text-decoration: underline;
+  }
+}
+
+.control_indicator {
+  position: absolute;
+  top: 30px;
+  left: 0;
+  height: 15px;
+  width: 15px;
+  background: white;
+  border: 1px solid gray;
+}
+
+.control-radio .control_indicator {
+  border-radius: 0;
+}
+
+.control {
+  &:hover input ~ .control_indicator {
+    background: #cccccc;
+  }
+  input {
+    &:focus ~ .control_indicator {
+      background: white;
+    }
+    &:checked ~ .control_indicator {
+      background: $blueTop;
+    }
+  }
+  &:hover input:not([disabled]):checked ~ .control_indicator {
+    background: $blueTop;
+  }
+  input {
+    &:checked:focus ~ .control_indicator {
+      background:  $blueTop;
+    }
+    &:disabled ~ .control_indicator {
+      background: $blueTop;
+      opacity: 0.6;
+      pointer-events: none;
+    }
+  }
+}
+
+.control_indicator:after {
+  box-sizing: unset;
+  content: '';
+  position: absolute;
+  display: none;
+}
+
+.control input:checked ~ .control_indicator:after {
+  display: block;
+}
+
+.control-checkbox {
+  .control_indicator:after {
+    left: 4px;
+    top: 0px;
+    width: 3px;
+    height: 8px;
+    border: solid #ffffff;
+    border-width: 0 2px 2px 0;
+    transform: rotate(45deg);
+  }
+  input:disabled ~ .control_indicator:after {
+    border-color: #7b7b7b;
+  }
+}
+button{
+  width: 185px;
+  background-color: $blueTop;
+  border: 0px solid #000;
+  color: white;
+  padding: 10px 0;
+  font-size: 12px;
+  margin-top: 10px;
+}

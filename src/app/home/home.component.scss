@@ -27,11 +27,10 @@ $babyblue: #51bed1;
   .carouselPhoto{
     background-color: black;
     .carousel{
-        max-width: 1500px;
         margin: 0 auto;
         /* Small Devices, Tablets */
         @media only screen and (max-width : 768px) {
-          height: 100vh;
+          height: 300px;
           img{
             display: block;
             width: 100vw;
@@ -136,6 +135,8 @@ h1{
     transition: all 1s ease;
     width: 100%;
   }
+  .time{
+    &:hover{content: url("../../assets/img/mockupimghover.png");}}
   .lorem{display: none;}
 
 }
@@ -172,6 +173,7 @@ h1{
     transform:scaleX(0.6) scaleY(0.7) translateX(-50%);
     border: 12px solid white;
     box-shadow: 1px 5px 50px black;
+    &:hover{content: "";}
   }
   .woman{
 
@@ -179,13 +181,14 @@ h1{
     transform:scaleX(0.8) translateX(220%) translateY(50%);
     border: 8px solid white;
     padding:0 !important;
-
+  &:hover{content: "";}
   }
   .stapms{
-    transition:  1s ease;
+    transition: all  1s ease;
     transform:scaleX(0.8) translateX(0%) translateY(-50%);
     border: 8px solid white;
     padding:0 !important;
+    content: url('../../assets/img/mockupimg3flip.png');
   }
   .lorem{
     background: linear-gradient(to right,  $babyblue, #4ed1e8 ,  $babyblue);

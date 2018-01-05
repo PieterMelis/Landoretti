@@ -117,17 +117,21 @@
           <label>Alternative payment methods</label>
           <input type="text" class="form-control" formControlName="payment"   >
         </div>
-
-
-
-
-
-
-
-
-
       </div>
-      <input type="checkbox" [checked]="saveUsername" (change)="saveUsername = !saveUsername" />
-      <button type="submit">Sign in</button>
+
+
+
+
+
+      <div class="control-group">
+        <label class="control control-checkbox">
+            <p>I Agree to <span>The Terms & Conditions</span> </p>
+                <input type="checkbox" />
+            <div class="control_indicator"></div>
+        </label>
+      </div>
+
+
+      <button type="submit">REGISTER</button>
     </form>
 </div>
