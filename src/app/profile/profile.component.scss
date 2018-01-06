@@ -126,12 +126,8 @@ $graylast: #e5e5e5;
 
     .carouselPhoto{
       margin-top: 20px;
-      .carousel{
-
-
-
-
-      }
+      height: 400px;
+      overflow: hidden;
     .carousel-indicators {
       position: absolute;
         bottom: 0px;
@@ -143,7 +139,7 @@ $graylast: #e5e5e5;
         text-align: center;
         list-style: none;
     .carousel-inner{
-      height: 850px;
+      height: 400px;
       background-size: cover;
     }
       li {
@@ -163,6 +159,29 @@ $graylast: #e5e5e5;
         background-color: #fff;
       }
 
+
+    }
+    .art{
+      width: 25% ;
+      float: left;
+        /* Large Devices, Wide Screens */
+      @media only screen and (max-width : 1200px) {
+
+      }
+
+      /* Medium Devices, Desktops */
+      @media only screen and (max-width : 992px) {
+        width: 33.3333333333% ;
+      }
+
+      /* Small Devices, Tablets */
+      @media only screen and (max-width : 768px) {
+        width: 50% ;
+      }
+        /* Extra Small Devices, Phones */
+      @media only screen and (max-width : 480px) {
+        width: 100%;
+      }
     }
     .glyphicon-menu-left, .glyphicon-menu-right{
         position: absolute;
