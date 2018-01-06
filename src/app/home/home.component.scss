@@ -39,12 +39,9 @@ $babyblue: #51bed1;
             object-fit: cover;
           }
           .text{
-            width: 90;
+            width: 90%;
           }
         }
-
-
-
     }
   }
 .carousel-indicators {
@@ -58,7 +55,6 @@ $babyblue: #51bed1;
     text-align: center;
     list-style: none;
 .carousel-inner{
-  height: 850px;
   background-size: cover;
 }
   li {
