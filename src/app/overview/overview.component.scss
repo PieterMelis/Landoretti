@@ -12,7 +12,7 @@ $black: black;
 $graylast: #e5e5e5;
 
 .head {
-  margin-top: 88px;
+  margin-top: 70px;
   background-image: url("../../assets/img/mockup2.png");
   height: 432px;
   width: 100%;
@@ -205,12 +205,12 @@ transition: all 1s ease;
     }
   }
   .art2{ @include art("../../assets/img/pro2.png");}
-  .art3{ @include art("../../assets/img/pro3.png");}
-  .art4{ @include art("../../assets/img/pro4.png");}
-  .art5{ @include art("../../assets/img/pro5.png");}
-  .art6{ @include art("../../assets/img/pro5.png");}
-  .art7{ @include art("../../assets/img/pro5.png");}
-  .art8{ @include art("../../assets/img/pro5.png");}
+  .art3{ @include art("../../assets/img/pro6.png");}
+  .art4{ @include art("../../assets/img/pro9.png");}
+  .art5{ @include art("../../assets/img/pro4.png");}
+  .art6{ @include art("../../assets/img/pro3.png");}
+  .art7{ @include art("../../assets/img/pro7.png");}
+  .art8{ @include art("../../assets/img/pro1.png");}
   .art9{ @include art("../../assets/img/pro5.png");}
   .info{
     height: 115px;
