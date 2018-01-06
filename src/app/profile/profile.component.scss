@@ -127,40 +127,8 @@ $graylast: #e5e5e5;
     .carouselPhoto{
       margin-top: 20px;
       height: 400px;
+      width: 100%;
       overflow: hidden;
-    .carousel-indicators {
-      position: absolute;
-        bottom: 0px;
-        left: 50%;
-        z-index: 15;
-        width: 60%;
-        padding-left: 0;
-        margin-left: -30%;
-        text-align: center;
-        list-style: none;
-    .carousel-inner{
-      height: 400px;
-      background-size: cover;
-    }
-      li {
-        display: inline-block;
-        width: 10px;
-        height: 10px;
-        margin: 8px;
-        text-indent: -999px;
-        cursor: pointer;
-        background-color: #000\9;
-        background-color: rgba(0,0,0,0);
-        border: 0.4px solid #fff;
-        border-radius: 10px;
-        background-color: rgba(255,255,255,0.3);
-      }
-      .active {
-        background-color: #fff;
-      }
-
-
-    }
     .art{
       width: 25% ;
       float: left;
@@ -211,23 +179,7 @@ $graylast: #e5e5e5;
 .main{
   margin-top: 50px;
 
-  .art1{
-    background-image: url("../../assets/img/uno.png");
-    height: 800px;
-    background-size: cover;
-    background-position: 25% 50%;
 
-    .lorem{
-      margin: 50px;
-      h1{
-        font-size: 30px;
-        margin-bottom: 20px;
-      }
-      p{
-        font-size: 12px;
-      }
-    }
-  }
   .vis{
     background-color: $lighterdarkgray;
     border: 1px solid $graylast;
@@ -254,14 +206,14 @@ $graylast: #e5e5e5;
       filter: opacity(50%);
     }
   }
+  .art1{ @include art("../../assets/img/pro2.png");}
   .art2{ @include art("../../assets/img/pro2.png");}
   .art3{ @include art("../../assets/img/pro3.png");}
   .art4{ @include art("../../assets/img/pro4.png");}
   .art5{ @include art("../../assets/img/pro5.png");}
-  .art6{ @include art("../../assets/img/pro5.png");}
-  .art7{ @include art("../../assets/img/pro5.png");}
-  .art8{ @include art("../../assets/img/pro5.png");}
-  .art9{ @include art("../../assets/img/pro5.png");}
+  .art6{ @include art("../../assets/img/pro6.png");}
+  .art7{ @include art("../../assets/img/pro8.png");}
+  .art8{ @include art("../../assets/img/pro8.png");}
   .info{
     height: 115px;
     width: 90%;
