@@ -152,6 +152,12 @@ $darkgray: #757575;
       padding: 15px;
       border: 1px solid $lightgray;
       text-decoration: none;
+          /* Small Devices, Tablets */
+       @media only screen and (max-width : 992px) {
+          margin: 0;
+          margin-top: 20px;
+          width: 100%;
+       }
     }
   }
   .pagination {
