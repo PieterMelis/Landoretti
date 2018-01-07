@@ -86,6 +86,8 @@ label {
   font-size: 10pt;
   margin-top: 10px;
 }
+.errors + input{background-color: #f8d7da; border: 2px solid red;}
+
 
 .form-control {
   color: black;

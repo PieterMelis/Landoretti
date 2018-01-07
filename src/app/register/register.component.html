@@ -44,23 +44,28 @@
 
     <form [formGroup]="form.getForm()" (ngSubmit)="save()">
       <div class="row">
-        <div class="form-group col-lg-6">
-          <label>Company or name</label>
-          <input type="text" class="form-control" formControlName="name"   >
-        </div>
+
+          <div class="form-group col-lg-6">
+            <label>Company or name</label>
+            <div class="errors" *ngIf="form.hasError('name')"></div>
+            <input type="text" class="form-control" formControlName="name"  >
+          </div>
 
         <div class="form-group col-lg-6">
           <label>Email</label>
+          <div class="errors" *ngIf="form.hasError('email')"></div>
           <input type="text" class="form-control" formControlName="email"   >
         </div>
 
         <div class="form-group col-lg-6">
           <label>Password</label>
+          <div class="errors" *ngIf="form.hasError('password')"></div>
           <input type="password" class="form-control" formControlName="password"  >
         </div>
 
         <div class="form-group col-lg-6">
           <label>Password confirmation</label>
+          <div class="errors" *ngIf="form.hasError('repassword')"></div>
           <input type="password" class="form-control" formControlName="repassword"   >
         </div>
 
@@ -76,16 +81,19 @@
 
         <div class="form-group col-lg-3">
           <label>Zip Code</label>
+          <div class="errors" *ngIf="form.hasError('zip')"></div>
           <input type="text" class="form-control" formControlName="zip"   >
         </div>
 
         <div class="form-group col-lg-3">
           <label>City</label>
+          <div class="errors" *ngIf="form.hasError('city')"></div>
           <input type="text" class="form-control" formControlName="city"   >
         </div>
 
         <div class="form-group col-lg-6">
           <label>Adress</label>
+          <div class="errors" *ngIf="form.hasError('adress')"></div>
           <input type="text" class="form-control" formControlName="adress"   >
         </div>
 
@@ -98,23 +106,27 @@
             </div>
 
             <div class="form-group col-xs-10 ">
-              <input type="tel" class="form-control" placeholder="XX XXX XX XX"  >
+              <div class="errors" *ngIf="form.hasError('phone')"></div>
+              <input name="telNo" type="tel" required class="form-control" formControlName="phone" >
             </div>
           </div>
         </div>
 
         <div class="form-group col-lg-6">
           <label>Account number</label>
-          <input type="text" class="form-control" placeholder="XX XXX XX XX"   >
+          <div class="errors" *ngIf="form.hasError('account')"></div>
+          <input type="text" class="form-control"  formControlName="account"   >
         </div>
 
         <div class="form-group col-lg-6">
           <label>VAT-number</label>
-          <input type="text" class="form-control" placeholder="XX XXX XX XX"   >
+          <div class="errors" *ngIf="form.hasError('vat')"></div>
+          <input type="text" class="form-control"  formControlName="vat"   >
         </div>
 
         <div class="form-group col-lg-12">
           <label>Alternative payment methods</label>
+          <div class="errors" *ngIf="form.hasError('payment')"></div>
           <input type="text" class="form-control" formControlName="payment"   >
         </div>
       </div>
