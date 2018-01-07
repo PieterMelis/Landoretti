@@ -8,12 +8,23 @@ import { Component, OnInit } from '@angular/core';
 export class HeaderComponent implements OnInit {
 
 
-  animated: boolean = false;
 
-     clickMe() {
-       this.animated = !this.animated;
+  uno: boolean = true;
+  en: boolean = false;
+  tre: boolean = false;
+     login1() {
+       this.uno = !this.uno;
      }
+     login2() {
+       this.en = !this.en;
+     }
+     logout() {
+       this.tre = !this.tre;
+       this.uno = this.uno;
+     }
+
      ngOnInit(){
 
      }
+
 }

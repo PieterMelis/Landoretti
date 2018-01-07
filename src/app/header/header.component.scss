@@ -2,7 +2,10 @@ $linkColor: #0a1e75;
 $blueTop: #01a6a0;
 $navGray: #eaeaea;
 $noBlack: #4e4e4e;
-
+$lightgray: #f3f3f3;
+$lighterdarkgray: #f5f5f5;
+$grayTitle: #545353;
+$darkgray: #757575;
 
 
 
@@ -66,7 +69,8 @@ $noBlack: #4e4e4e;
 	}
 	span img{
 		padding: 0 5px;
-		height: 12px;
+		height: 10px;
+		margin-top: -3px;
 	}
 	.nav{
 		margin-left: 100px;
@@ -107,13 +111,76 @@ $noBlack: #4e4e4e;
 	}
 }
 
-// Medium devices (tablets, 768px and up)
-@media (min-width: 768px) and (max-width: 991px) {
+
+
+
+
+
+
+
+
+.state1{
+	display: none;
+}
+.state2{
+	display: none;
+}
+.state3{
+	display: none;
 
 }
 
-// Large devices (desktops, 992px and up)
-@media (min-width: 992px) and (max-width: 1199px) {  }
 
-// Extra large devices (large desktops, 1200px and up)
-@media (min-width: 1200px) {  }
+
+//login
+.login1{
+	.state1{
+		display: block;
+	}
+	.state2{
+		display: none;
+	}
+	.state3{
+		display: none;
+	}
+}
+
+.login2{
+	.state1{
+		display: none;
+	}
+	.state2{
+		display: block;
+	}
+	.state3{
+		display: none;
+	}
+
+}
+.logout{
+	.state1{
+		display: none;
+	}
+	.state2{
+		display: none;
+	}
+	.state3{
+		display: block;
+	}
+}
+.userlogin{
+	margin-top: -2px;
+	input{
+		background-color:$lighterdarkgray;
+		padding-left: 5px;
+		font-style: italic;
+		border: none;
+		width: 80px;
+		margin-right: 15px;
+
+	}
+	button{
+		border: none;
+		width: 20px;
+	}
+}

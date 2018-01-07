@@ -34,7 +34,7 @@ $google: #dd4b39;
       width: 100%;
   }
   span img{
-		height: 12px;
+		height: 10px;
 	}
   .contact{
     width: 70%;
@@ -123,13 +123,16 @@ $google: #dd4b39;
     margin-left: 0 !important;
     padding-bottom: 50px;
   }
-  .navbar-footer{
-    display: none;
-  }
+
   .rights {
-    text-align: left;
-    width: 300px;
+    text-align: center;
+    width: 100%;
     display: inline;
   }
 
  }
+ @media only screen and (max-width : 768px) {
+   .navbar-footer{
+     display: none;
+   }
+  }
