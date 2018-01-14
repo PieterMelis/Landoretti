@@ -104,7 +104,10 @@ $graylast: #e5e5e5;
   background-color: $lighterdarkgray;
   text-align: center;
 }
-
+h3{
+  margin: 50px 0 20px 0;
+  color: gray;
+}
 .product {
   margin: 0;
   padding: 0;
@@ -175,11 +178,19 @@ table {
 
   img {
     height: 100px;
+    width: 100px;
+    object-fit: cover;
     float: left;
   }
 }
 /* Small Devices, Tablets */
 @media only screen and (max-width : 768px) {
+.addnew{
+  width: 90%;
+  margin: 20px auto;
+  left: 0;
+  right: 0;
+}
   table {
     td,
     th {
