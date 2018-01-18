@@ -1,3 +1,189 @@
-<p>
-  newauction works!
-</p>
+<div class="head">
+  <div class="container">
+    <div class="text">
+      <div class="ball"></div>
+      <h1>Lorem Ipsum</h1>
+
+      <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. magnis dis parturient montes, nascetur ridiculus mus...</p>
+      <h5>Price: € 299,99</h5>
+
+    </div>
+    <div class="visit">
+      <a href="#">
+        <h1>Visit Auction <span class="glyphicon glyphicon-menu-right"></span></h1>
+      </a>
+    </div>
+  </div>
+</div>
+<div class="container">
+  <div class="breadcrumbs">
+    <a href="#">Home </a> > <a href="#">Jasper Poppe </a> > <a href="#">My auctions</a> > New auction
+  </div>
+<h1>Add a new auctions</h1>
+<div class="error" >
+
+  <li *ngIf="form.hasError('title')" class="alert alert-danger">{{form.getError('title')}}</li>
+  <li *ngIf="form.hasError('year')" class="alert alert-danger">{{form.getError('year')}}</li>
+  <li *ngIf="form.hasError('width')" class="alert alert-danger">{{form.getError('width')}}</li>
+  <li *ngIf="form.hasError('height')" class="alert alert-danger">{{form.getError('height')}}</li>
+  <li *ngIf="form.hasError('depth')" class="alert alert-danger">{{form.getError('depth')}}</li>
+  <li *ngIf="form.hasError('discription')" class="alert alert-danger">{{form.getError('discription')}}</li>
+  <li *ngIf="form.hasError('condition')" class="alert alert-danger">{{form.getError('condition')}}</li>
+  <li *ngIf="form.hasError('origin')" class="alert alert-danger">{{form.getError('origin')}}</li>
+  <li *ngIf="form.hasError('file1')" class="alert alert-danger">{{form.getError('file1')}}</li>
+  <li *ngIf="form.hasError('file2')" class="alert alert-danger">{{form.getError('file2')}}</li>
+  <li *ngIf="form.hasError('file3')" class="alert alert-danger">{{form.getError('file3')}}</li>
+  <li *ngIf="form.hasError('min')" class="alert alert-danger">{{form.getError('min')}}</li>
+  <li *ngIf="form.hasError('max')" class="alert alert-danger">{{form.getError('max')}}</li>
+  <li *ngIf="form.hasError('buyout')" class="alert alert-danger">{{form.getError('buyout')}}</li>
+  <li *ngIf="form.hasError('end')" class="alert alert-danger">{{form.getError('end')}}</li>
+</div>
+<div class="row">
+  <div class="col-lg-9">
+      <form [formGroup]="form.getForm()" (ngSubmit)="save()">
+      <div class="row">
+        <div class="form-group col-lg-8">
+          <label>Auction title</label>
+          <div class="errors" *ngIf="form.hasError('title')"></div>
+          <input type="text" class="form-control" formControlName="title"  >
+        </div>
+        <div class="form-group col-lg-4">
+          <label>Year</label>
+          <div class="errors" *ngIf="form.hasError('year')"></div>
+          <input type="text" class="form-control" formControlName="year"  >
+        </div>
+        <div class="form-group col-lg-4">
+          <label>Width</label>
+          <div class="errors" *ngIf="form.hasError('width')"></div>
+          <input type="text" class="form-control" formControlName="width"  >
+        </div>
+        <div class="form-group col-lg-4">
+          <label>Height</label>
+          <div class="errors" *ngIf="form.hasError('height')"></div>
+          <input type="text" class="form-control" formControlName="height"  >
+        </div>
+        <div class="form-group col-lg-4">
+          <label>Depth</label><span> (optional)</span>
+          <div class="errors" *ngIf="form.hasError('depth')"></div>
+          <input type="text" class="form-control" formControlName="depth"  >
+        </div>
+        <div class="form-group col-lg-12">
+          <label>Discription</label>
+          <div class="errors" *ngIf="form.hasError('discription')"></div>
+          <textarea type="text" class="form-control" formControlName="discription"  ></textarea>
+        </div>
+        <div class="form-group col-lg-12">
+          <label>Condition</label>
+          <div class="errors" *ngIf="form.hasError('condition')"></div>
+          <textarea type="text" class="form-control" formControlName="condition"  ></textarea>
+        </div>
+        <div class="form-group col-lg-12">
+          <label>Origin</label>
+          <div class="errors" *ngIf="form.hasError('origin')"></div>
+          <input type="text" class="form-control" formControlName="origin"  >
+        </div>
+
+        <div class="form-group col-lg-12">
+          <label>Photos</label>
+          <p>Please upload one picture with the signature of the artwork and one picture of the artwork<br>
+          You can upload up to 3 pictures with a maximum of 10MB each</p>
+          <div class="row">
+            <div class=" col-lg-4">
+              <label class="btn col-lg-12">
+                    Upload image<br> of the artwork
+                    <input type="file" style="display: none;" formControlName="file1" >
+              </label>
+            </div>
+            <div class=" col-lg-4">
+              <label class="btn col-lg-12">
+                    Upload image<br> of the signature
+                    <input type="file" style="display: none;" formControlName="file2" >
+              </label>
+            </div>
+            <div class=" col-lg-4">
+              <label class="btn btnl col-lg-12">
+                    Optional image<br>
+                    <input type="file" style="display: none;" formControlName="file3" >
+              </label>
+            </div>
+          </div>
+
+        </div>
+        <div class="col-lg-12">
+          <h2>Pricing</h2>
+        </div>
+
+        <div class="row m-0">
+          <div class="form-group col-lg-4">
+            <label class="euro">Minimum estimate price</label>
+
+            <div class="errors" *ngIf="form.hasError('min')"></div>
+
+            <input type="text" class="form-control" formControlName="min"  >
+          </div>
+          <div class="form-group col-lg-4">
+            <label class="euro">Maximum estimate price</label>
+            <div class="errors" *ngIf="form.hasError('max')"></div>
+            <input type="text" class="form-control" formControlName="max"  >
+          </div>
+          <div class="form-group col-lg-4">
+            <label class="euro">Buyout price</label><span> (optional)</span>
+            <div class="errors" *ngIf="form.hasError('buyout')"></div>
+            <input type="text" class="form-control" formControlName="buyout"  >
+          </div>
+          <div class="form-group col-lg-4">
+            <label>End date</label>
+            <div class="errors" *ngIf="form.hasError('end')"></div>
+            <input type="text" class="form-control" formControlName="end"  >
+          </div>
+          <div class="form-group col-lg-8">
+            <label>Attention</label>
+            <p>You can not change the information after adding this auction.<br>
+            If you're not certain about the information of your artwork, please ask for help.<br>
+            We will answer you question as soon as possible.</p>
+          </div>
+        </div>
+
+
+
+
+        <div class="col-lg-12">
+          <label class="control control-checkbox">
+              <p>I Agree to <span>The Terms & Conditions</span> </p>
+                  <input type="checkbox" />
+              <div class="control_indicator"></div>
+          </label>
+        </div>
+
+        <div class="form-group col-lg-12">
+
+          <button type="submit">ADD AUCTION</button>
+          <a routerLink="/faq" class="faq">
+            <p>ASK A QUESTION <span class="glyphicon glyphicon-menu-right"></span> </p>
+          </a>
+        </div>
+
+
+      </div>
+    </form>
+  </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</div>
