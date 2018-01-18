@@ -125,6 +125,30 @@ button{
     border-color: transparent;
   }
 }
+
+.select-style {
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    overflow: hidden;
+    background: #fafafa url("../../assets/img/oke.png") no-repeat 90% 50%;
+}
+
+.select-style select {
+    padding: 5px 8px;
+    width: 130%;
+    border: none;
+    box-shadow: none;
+    background: transparent;
+    background-image: none;
+    -webkit-appearance: none;
+}
+
+.select-style select:focus {
+    outline: none;
+}
+
+
+
 .btn{
   background-color: $darkgray;
   border-radius: 0;
@@ -229,4 +253,19 @@ button{
 }
 textarea{
   height: 100px;
+}
+.oke{
+  input, textarea{
+   background-image: url("../../assets/img/oke.png") ;
+   background-size: 20px;
+   background-repeat: no-repeat;
+   background-position: right bottom;
+
+  }
+  .btn{
+    background-image: url("../../assets/img/okeWhite.png") ;
+    background-size: 20px;
+    background-repeat: no-repeat;
+    background-position: right top;
+  }
 }

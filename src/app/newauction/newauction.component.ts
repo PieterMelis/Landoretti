@@ -46,11 +46,12 @@ export class NewauctionComponent implements OnInit {
    this.form.setValue('buyout', '0000');
    this.form.setValue('end', '00/00/00');
  }
-
+done: boolean = false;
  save(){
    if(this.form.isValid()){
      alert('validation pass');
-     this.form.reset();
+        this.done = !this.done;
+        }
    }
  }
 

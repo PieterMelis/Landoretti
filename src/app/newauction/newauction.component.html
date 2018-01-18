@@ -40,8 +40,30 @@
 </div>
 <div class="row">
   <div class="col-lg-9">
-      <form [formGroup]="form.getForm()" (ngSubmit)="save()">
+      <form [formGroup]="form.getForm()" (ngSubmit)="save()" [ngClass]="{'oke': done}">
       <div class="row">
+        <div class="col-lg-8">
+          <div class="select-style">
+                    <select>
+                        <option data-display="Style"></option>
+                        <option >Abstract</option>
+                        <option >African American</option>
+                        <option >Asian Contemporary</option>
+                        <option >Conceptual</option>
+                        <option >Contemporary</option>
+                        <option >Emerging Artists</option>
+                        <option >Figurative</option>
+                        <option >Middle Eastern Contemporary</option>
+                        <option >Minimalism</option>
+                        <option >Modern</option>
+                        <option >Pop</option>
+                        <option >Urban</option>
+                        <option >Vintage Photographs</option>
+                    </select>
+                </div>
+
+
+        </div>
         <div class="form-group col-lg-8">
           <label>Auction title</label>
           <div class="errors" *ngIf="form.hasError('title')"></div>
