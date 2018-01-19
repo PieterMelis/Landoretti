@@ -27,8 +27,13 @@ $babyblue: #51bed1;
   .carouselPhoto{
     background-color: black;
     .carousel{
-        max-width: 1500px;
-        margin: 0 auto;
+        max-width: 100vw;
+        img{
+          display: block;
+          width: 100vw;
+          height: 100vh;
+          object-fit: cover;
+        }
         /* Small Devices, Tablets */
         @media only screen and (max-width : 768px) {
           height: 100vh;
@@ -116,7 +121,7 @@ h1{
   p{
     width: 60%;
     text-align: center;
-    margin: 0 auto;
+    margin: 0 auto 40px auto;
   }
 }
 .popular{

@@ -15,4 +15,9 @@ export class OverviewComponent implements OnInit {
      ngOnInit(){
 
      }
+     text:any = {
+    Days: "d",
+    Hours: "u",
+    Minutes: "m",
+  };
 }

@@ -6,6 +6,7 @@ import { RouterModule } from '@angular/router';
 import { routing } from './app.routes';
 import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
 import { ReactiveFormsModule } from '@angular/forms';
+import {CountDown} from "ng2-date-countdown";
 
 import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
@@ -37,7 +38,8 @@ import { FaqComponent } from './faq/faq.component';
     NewauctionComponent,
     ProfileComponent,
     RegisterComponent,
-    FaqComponent
+    FaqComponent,
+    CountDown
   ],
   imports: [
     BrowserModule,

@@ -10,15 +10,16 @@
 </button>
     <a href="#"> <img src="../assets/img/Logo.png" alt="logo" class="logo"> </a>
   </div>
-  <div class="collapse navbar-collapse navbar-ex1-collapse">
+  <div class="collapse navbar-collapse navbar-ex1-collapse ">
     <ul class="nav navbar-nav text-center">
-      <li class="nav-item "><a href="#">Home</a></li>
-      <li class="nav-item"><a class="nav-link" href="#">art</a></li>
-      <li class="nav-item"><a class="nav-link" href="#">isearch</a></li>
-      <li class="nav-item"><a class="nav-link" href="#">myauctions</a></li>
+      <li class="nav-item "><a routerLink="/home">Home</a></li>
+      <li class="nav-item"><a class="nav-link" routerLink="/overview">art</a></li>
+      <li class="nav-item"><a class="nav-link" routerLink="/isearch">isearch</a></li>
+      <li class="nav-item"><a class="nav-link" routerLink="/auctions">myauctions</a></li>
       <li class="nav-item"><a class="nav-link" href="#">mybids</a></li>
       <li class="nav-item"><a class="nav-link" href="#">contact</a></li>
-      <li><a href="#">Register</a></li>
+
+      <li><a routerLink="/register">Register</a></li>
       <li><a href="#">Login</a></li>
 
     </ul>
@@ -45,7 +46,7 @@
                 <li class="nav-item">
                   <a href="#" (click)="login2()">Login</a>
                 </li>
-                <li class="right"><input type="text" placeholder="Search"><span><img src="./assets/img/Searchicon.png" alt="menu"></span> </li>
+                <li class="right"><input type="text" placeholder="Search"><span><img src="./assets/img/Searchicon.png" alt="Search"></span> </li>
               </ul>
             </div>
             <div class="state2">
@@ -59,24 +60,24 @@
                   <button type="button" name="button" (click)="logout()"><li class="glyphicon">&#xe258;</li></button>
                 </li>
 
-                <li class="right"><input type="text" placeholder="Search"><span><img src="./assets/img/Searchicon.png" alt="menu"></span> </li>
+                <li class="right"><input type="text" placeholder="Search"><span><img src="./assets/img/Searchicon.png" alt="Search"></span> </li>
               </ul>
             </div>
 
             <div class="state3">
               <ul class="nav ">
                 <li class="nav-item">
-                  <a routerLink="/watchlist"><span> <img src="./assets/img/menu.png" alt="menu"> </span> Watchlist</a>
+                  <a routerLink="/watchlist"><span> <img src="./assets/img/menu.png" alt="watchlist"> </span> Watchlist</a>
                 </li>
                 <li>|</li>
                 <li class="nav-item">
-                  <a routerLink="/profile"><span ><img src="./assets/img/user.png" alt="menu" ></span> Profile</a>
+                  <a routerLink="/profile"><span ><img src="./assets/img/user.png" alt="profile" ></span> Profile</a>
                 </li>
                 <li>|</li>
                 <li class="nav-item">
                   <a href="#" class="logout" (click)="login1()"> Logout</a>
                 </li>
-                <li class="right"><input type="text" placeholder="Search"><span><img src="./assets/img/Searchicon.png" alt="menu"></span> </li>
+                <li class="right"><input type="text" placeholder="Search"><span><img src="./assets/img/Searchicon.png" alt="Search"></span> </li>
               </ul>
             </div>
           </div>
