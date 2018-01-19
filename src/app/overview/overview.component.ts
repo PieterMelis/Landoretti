@@ -16,8 +16,10 @@ export class OverviewComponent implements OnInit {
 
      }
      text:any = {
-    Days: "d",
-    Hours: "u",
-    Minutes: "m",
-  };
+
+     Days: "d",
+     Hours: "u",
+     Minutes: "m",
+     Seconds: "s"
+   };
 }

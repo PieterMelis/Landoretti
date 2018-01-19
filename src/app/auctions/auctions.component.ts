@@ -11,5 +11,11 @@ export class AuctionsComponent implements OnInit {
 
   ngOnInit() {
   }
+  text:any = {
 
+  Days: "d",
+  Hours: "u",
+  Minutes: "m",
+  Seconds: "s"
+  };
 }

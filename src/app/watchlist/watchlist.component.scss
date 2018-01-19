@@ -255,3 +255,29 @@ table {
     }
   }
 }
+
+
+
+
+/deep/ .countdown {
+     width: 100%;
+
+     .two-dots {
+       display: none;
+     }
+
+     .measurements {
+       margin-right: 15px;
+       padding: 0px;
+       position: relative;
+    }
+    .measurements-number{
+      text-align: right;
+    }
+    .measurements-text{
+      position: absolute;
+      top: 0;
+      right: -8px;
+    }
+
+}

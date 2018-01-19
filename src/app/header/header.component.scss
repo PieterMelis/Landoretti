@@ -25,7 +25,9 @@ $darkgray: #757575;
 			background-color: white;
 			a{
 				color: $linkColor;
-
+				&:active, :visited {
+					background-color: transparent;
+				}
 			}
 			.nav-item a:hover{
 				background-color:  white;
@@ -42,6 +44,9 @@ $darkgray: #757575;
 			font-weight: bold;
 			color: $noBlack;
 			padding: 10px;
+			&:active, :visited {
+				background-color: transparent;
+			}
 		}
 		.nav-item a:hover{
 			background-color:  $navGray;
